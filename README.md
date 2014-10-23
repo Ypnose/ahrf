@@ -61,4 +61,20 @@ OpenSSL TLS protocol downgrade attack (CVE-2014-3511)</p>
 
 `<pre><code></code></pre>`
 
-WIP!
+```
+====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda5        12G  2.5G  8.6G  23% /
+dev             3.9G     0  3.9G   0% /dev
+run             4.0G  592K  3.9G   1% /run
+tmpfs           4.0G     0  4.0G   0% /dev/shm
+====
+```
+
+```
+<pre><code>Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda5        12G  2.5G  8.6G  23% /
+dev             3.9G     0  3.9G   0% /dev
+run             4.0G  592K  3.9G   1% /run
+tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
+```
