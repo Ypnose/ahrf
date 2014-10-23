@@ -25,16 +25,22 @@ Syntax
 <h1>My important page title</h1>
 ```
 
-	:: This is the category title ::
+```
+:: This is the category title ::
+```
 
-	<h2>This is the category title</h2>
+```
+<h2>This is the category title</h2>
+```
 
 and so on...
 
-	::: ::: for <h3><h3>
-	:::: :::: for <h4><h4>
-	::::: ::::: for <h5><h5>
-	:::::: :::::: for <h6><h6>
+```
+::: ::: for <h3><h3>
+:::: :::: for <h4><h4>
+::::: ::::: for <h5><h5>
+:::::: :::::: for <h6><h6>
+```
 
 `<p>`
 
