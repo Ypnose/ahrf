@@ -113,10 +113,10 @@ matched.
 
 ```
 <ul>
-	<li><a href="https://github.com/">https://github.com/</a></li>
-	<li><a href="http://netbsd.org/">http://netbsd.org/</a></li>
-	<li><a href="http://ypnose.org/">http://ypnose.org/</a></li>
-	<li><a href="http://www.libressl.org/">http://www.libressl.org/</a></li>
+	<li>[0] <a href="https://github.com/">https://github.com/</a></li>
+	<li>[1] <a href="http://netbsd.org/">http://netbsd.org/</a></li>
+	<li>[2] <a href="http://ypnose.org/">http://ypnose.org/</a></li>
+	<li>[666] <a href="http://www.libressl.org/">http://www.libressl.org/</a></li>
 </ul>
 ```
 
