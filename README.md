@@ -119,6 +119,13 @@ matched.
 </ul>
 ```
 
+#### Comments
+
+There is now specific regex for the comments. If the line doesn't "satisfy"
+the above specs, it'll be just ignored. However, starting comments by `#`
+is a perfect idea. The readers will be able to see them, in less than 0,25
+ms (yes, many config files use `#`).
+
 To avoid invalid HTML code, the symbols `>` `<` and `&` are automatically
 replaced by their HTML counterparts.
 
@@ -138,7 +145,7 @@ Notes
 -----
 
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
-I do not ask or force anybody to use it. I want to write my own documentation
+I do not ask or force anybody to adopt it. I want to write my own documentation
 or cheatsheets using an easy "system".  
 `markdown` can be very frustrating when you use a lot of preformatted text
 or lists and the results is sometimes totally broken and wrong. For example,
@@ -147,6 +154,11 @@ matches.
 I'm not even talking about the dozens of differents variants /
 implementations... And do not tell me I don't know what I'm talking about
 because I "played" thousands of times with `markdown`.
+
+Issues
+------
+
+Maybe. I'm not enough confident to write a bugless script. Report them!
 
 Copyright
 ---------
