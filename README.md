@@ -1,7 +1,7 @@
-ahrt - [a]scii (or [a]wk) [h]uman [r]eadable [t]ext
+ahrf - [a]scii (or [a]wk) [h]uman [r]eadable [f]ile
 ---------------------------------------------------
 
-ahrt is an `awk` script designed to interpret a simple and straightforward
+ahrf is an `awk` script designed to interpret a simple and straightforward
 ascii file format. I wrote it to share my personal documentation, which is
 written in plain text files. They can be exported to HTML.  
 The main goal was... readability.
@@ -126,13 +126,13 @@ Regressions?
 ------------
 
 To prevent introducing regressions when regexes are reworked, improved or
-expanded, a `sh` script was written to check and compare `ahrt` output. It's
+expanded, a `sh` script was written to check and compare `ahrf` output. It's
 called `verify_regr`. It can be called via `your_favourite_shell verify_regr`
 or `make` for the lazy men. `make clean` deletes the invalid files from the
 last checking. __I strongly advise you to run it for every changes!__
 
 The valid ouput can be found within the files `*.valid` inside the directory
-`test`. It's a good idea to check those results to understand how `ahrt` behaves.
+`test`. It's a good idea to check those results to understand how `ahrf` behaves.
 
 Notes
 -----
