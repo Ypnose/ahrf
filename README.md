@@ -1,9 +1,10 @@
-arht - [a]scii (or [a]wk) [r]eadable [h]uman [t]ext
+ahrt - [a]scii (or [a]wk) [h]uman [r]eadable [t]ext
 ---------------------------------------------------
 
-arht is an `awk` script designed to interpret a simple and straightforward
+ahrt is an `awk` script designed to interpret a simple and straightforward
 ascii file format. I wrote it to share my personal documentation, which is
-written in plain text files. The main goal was... readability.
+written in plain text files. They can be exported to HTML.  
+The main goal was... readability.
 
   * One requirement: `awk`
   * Supporting all `awk` variants (`nawk`, `mawk` or `gawk`)
@@ -15,7 +16,7 @@ written in plain text files. The main goal was... readability.
 Syntax
 ------
 
-`<h1>` to `<h6>`
+#### Headings: `<h1>` to `<h6>`
 
 ```
 : My important page title :
@@ -42,9 +43,10 @@ and so on...
 :::::: :::::: for <h6><h6>
 ```
 
-`<p>`
+#### Paragraph: `<p>`
 
-You just need to put your paragraph inside the file. Nothing else is needed:
+You just need to put your paragraph inside the file. Nothing else is
+needed:
 
 ```
 DTLS memory leak from zero-length fragments (CVE-2014-3507)
@@ -59,7 +61,7 @@ Race condition in ssl_parse_serverhello_tlsext (CVE-2014-3509)
 OpenSSL TLS protocol downgrade attack (CVE-2014-3511)</p>
 ```
 
-`<pre><code></code></pre>`
+#### Code block: `<pre><code></code></pre>`
 
 ```
 ====
@@ -78,3 +80,45 @@ dev             3.9G     0  3.9G   0% /dev
 run             4.0G  592K  3.9G   1% /run
 tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
 ```
+
+#### Unordered list: `<ul><li></li></ul>`
+
+```
+* Eat cooked meat
+* Buy french bread
+* Peel potatoes
+* Drink beers
+```
+
+```
+<ul>
+	<li>Eat cooked meat</li>
+	<li>Buy french bread</li>
+	<li>Peel potatoes</li>
+	<li>Drink beers</li>
+</ul>
+```
+
+#### Page links: `<ul><a></a></ul>`
+
+The "list" needs to be started by `[0]` or `[1]`. If not, it won't be
+matched.
+
+```
+[0] https://github.com/
+[1] http://netbsd.org/
+[2] http://ypnose.org/
+[666] http://www.libressl.org/
+```
+
+```
+<ul>
+	<li><a href="https://github.com/">https://github.com/</a></li>
+	<li><a href="http://netbsd.org/">http://netbsd.org/</a></li>
+	<li><a href="http://ypnose.org/">http://ypnose.org/</a></li>
+	<li><a href="http://www.libressl.org/">http://www.libressl.org/</a></li>
+</ul>
+```
+
+Regressions?
+------------
