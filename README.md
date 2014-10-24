@@ -43,7 +43,7 @@ and so on...
 :::::: :::::: for <h6><h6>
 ```
 
-#### Paragraph: `<p>`
+#### Paragraph: `<p></p>`
 
 You just need to put your paragraph inside the file. Nothing else is needed:
 
@@ -127,20 +127,20 @@ Regressions?
 
 To prevent introducing regressions when regexes are reworked, improved or
 expanded, a `sh` script was written to check and compare `ahrt` output. It's
-called `verify_regr`.  
-It can be called via `your_favourite_shell verify_regr` or `make` for the
-lazy men. `make clean` deletes the invalid files from the last checking.  
-I strongly advise you to run it for every changes!
+called `verify_regr`. It can be called via `your_favourite_shell verify_regr`
+or `make` for the lazy men. `make clean` deletes the invalid files from the
+last checking.  
+__I strongly advise you to run it for every changes!__
 
-The valid ouput can be found inside the files `*.valid` inside the directory
+The valid ouput can be found within the files `*.valid` inside the directory
 `test`. It's a good idea to check those results to understand how `ahrt` behaves.
 
 Notes
 -----
 
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
-I do not ask or force anybody to use it.  
-I want to write my own documentation or cheatsheets using an easy "system".
+I do not ask or force anybody to use it. I want to write my own documentation
+or cheatsheets using an easy "system".  
 `markdown` can be very frustrating when you use a lot of preformatted text
 or lists and the results is sometimes totally broken and wrong. For example,
 when I wrote that `README.md`, I encountered many times wrong output or bad
