@@ -1,0 +1,15 @@
+<p>Can we meet us outside the tunnel &amp; share some pork ribs?
+Yep, but we'll need to go to this direction: &gt;, &lt;, &gt;, &gt;, &lt;&lt;, &gt;&gt;, &lt;, &gt;&gt;&gt;,
+&lt;, &gt;, &lt;&lt;&lt;.
+It that OK? Yep, I can follow the wonderful smell &amp;&amp; taste. See you there.</p>
+
+<pre><code>cd /var/tmp
+ftp http://nyftp.netbsd.org/pub/NetBSD-daily/&lt;rel&gt;/&lt;build&gt;/&lt;arch&gt;/binary/sets/base.tgz
+cd /
+tar xzpf /var/tmp/base.tgz ./usr/libexec/httpd
+
+with the following replacements:
+&lt;rel&gt;   = the release version you are using
+&lt;build&gt; = the source date of the build. 20140710* and later will fit
+&lt;arch&gt;  = your system's architecture
+&amp;&amp; YOU'RE DONE</code></pre>

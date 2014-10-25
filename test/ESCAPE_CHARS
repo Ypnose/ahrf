@@ -1,0 +1,24 @@
+# ESCAPE CHARACTERS (>, <, &)
+# Substitutions
+
+# Paragraph
+
+Can we meet us outside the tunnel & share some pork ribs?
+Yep, but we'll need to go to this direction: >, <, >, >, <<, >>, <, >>>,
+<, >, <<<.
+It that OK? Yep, I can follow the wonderful smell && taste. See you there.
+
+# Code
+
+====
+cd /var/tmp
+ftp http://nyftp.netbsd.org/pub/NetBSD-daily/<rel>/<build>/<arch>/binary/sets/base.tgz
+cd /
+tar xzpf /var/tmp/base.tgz ./usr/libexec/httpd
+ 
+with the following replacements:
+<rel>   = the release version you are using
+<build> = the source date of the build. 20140710* and later will fit
+<arch>  = your system's architecture
+&& YOU'RE DONE
+====

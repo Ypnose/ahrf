@@ -1,0 +1,42 @@
+# BLOCK CODE 2: <pre><code></code></pre>
+# Tricky / insane cases
+
+# Unclosed block. Unmatched.
+
+====
+Here starts the snippet
+====
+Here end the snippet
+
+# Block with many "="
+
+====
+==== Sneaky code block ====
+ ==== FOO ===
+ 
+  ====== WHAT ====
+ 
+   INSIDE ==== MIDDLE
+ 
+  HEH BRO
+ ==== LAST LINE
+====
+
+# Redirection(s) block + replacing symbols (WIP)
+
+====
+ 
+bro >> nope
+nana <he
+ 
+  >
+  >>
+  >>>
+  >>>>
+ 
+  <
+  <<
+  <<<
+  <<<<
+  end of life / line
+====

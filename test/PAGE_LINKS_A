@@ -1,0 +1,43 @@
+# END PAGE LINKS: <ul><li><a href=""></a></li></ul>
+
+# Normal links
+
+[0] https://www.mirbsd.org/
+[4] https://hehehe.nope/
+[7] https://umadbro.ifu/
+[9] http://ypnose.org/
+[12] http://fmelgth.org/
+[15] http://fmelgth.org/
+[20] http://fmelgth.org/
+[24] http://fmelgth.org/
+
+# Link starting by tab + space
+
+	 [0] https://tabandspace.noid
+
+# Link starting by tab + two spaces + tab
+
+	  	[0] https://tabandspaceandtab.noid
+
+# Link (1 instead 0)
+
+[1] http://fmelgth.org/
+
+# Won't be matched. That's normal.
+
+[2] http://ypnose.org/
+
+# Won't be matched. That's normal.
+
+[k] http://nope.nope/
+[what?] http://failed.yeno/
+
+[1] https://letsstart.ifu/
+# Won't be matched. That's normal.
+[Y] http://previousmistake.org/
+
+# Links with 1, 3 and 4 digits
+
+[1] http://coldevening.noidea
+[365] http://awhole.year
+[9999] http://endofthewo.rld

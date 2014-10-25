@@ -1,0 +1,53 @@
+# UNORDERED LIST: <ul></ul>
+
+# No space (before and after '*')
+
+*No space
+
+# Space after '*'
+
+* No indent
+
+# Space before and after '*'
+
+ * One space
+
+# Two spaces before and one space after + an empty line then
+
+  * Two spaces (with a empty line then)
+  
+
+# Three spaces before + three empty lines (empty = unmatched)
+
+   * Three spaces (with a empty line then)
+   
+
+# Tab before '*' + an empty line
+
+	* One tab (with a empty line then)
+	
+
+# Two tabs before + an empty line
+
+		* Two tabs (with a empty line then)
+		
+
+# Three tabs + an empty line
+
+			* Three tabs (with a empty line then)
+			
+
+# Normal list
+
+* Eat cooked meat
+* Buy french bread
+* Peel potatoes
+* Drink beers
+
+# List with '*' with increment
+
+* Learn awk
+** Sleep well
+*** Man up
+**** Listen to birds
+***** Do not procrastinate

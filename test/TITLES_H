@@ -1,0 +1,51 @@
+# Empty H* level
+
+: :
+
+    :: ::
+
+	::: :::
+
+# H1: <h1></h1>
+
+: This is the H1 title :
+
+: 	  	This is the H1 title 		:	 
+
+:    This is the H1 title
+
+# H2: <h2></h2>
+
+::	This is the H2 level	::
+
+::This is the H2 level::		
+
+# H3: <h3></h3>
+
+::: This is the H3 level :::
+
+  ::: This is the H3 level			   :::
+
+# H4: <h4></h4>
+
+::::  This is the H4 level
+
+	::::	This is the H4 level	::::	
+
+# H5: <h5></h5>
+
+:::::This is the H5 level:::::
+
+  :::::  This is the H5 level :::::		 
+
+# H6: <h6></h6>
+
+:::::: This is the H6 level          ::::::
+
+		::::::		This is the H6 level  ::::::  
+
+# Won't be matched (normal)
+
+	::::::: This is the H7 level. That's terribly wrong! :::
+
+::::::: This is the H7 level. That's terribly wrong! :::::::

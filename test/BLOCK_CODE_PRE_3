@@ -1,0 +1,46 @@
+# BLOCK CODE 3: <pre><code></code></pre>
+# Tricky / brainless cases
+
+# No need to describe everything, use your eyes
+
+====
+====
+Here my code
+====
+====
+
+# Disable it (not your business)
+====
+ 
+BLOCK 1
+ ====
+====
+
+====
+ 
+ 
+		BLOCK 2
+====
+
+====
+    BLOCK 3
+    
+    END
+	TAB
+====
+
+====
+	
+	BLOCK 4
+	
+====
+
+# More than 4 "=" (unmatched "for now")
+
+=====
+FIVE EQUALS
+=====
+
+=======
+SEVEN EQUALS
+=======

@@ -1,0 +1,37 @@
+<ul>
+	<li>No space</li>
+</ul>
+<ul>
+	<li>No indent</li>
+</ul>
+<ul>
+	<li>One space</li>
+</ul>
+<ul>
+	<li>Two spaces (with a empty line then)</li>
+</ul>
+<ul>
+	<li>Three spaces (with a empty line then)</li>
+</ul>
+<ul>
+	<li>One tab (with a empty line then)</li>
+</ul>
+<ul>
+	<li>Two tabs (with a empty line then)</li>
+</ul>
+<ul>
+	<li>Three tabs (with a empty line then)</li>
+</ul>
+<ul>
+	<li>Eat cooked meat</li>
+	<li>Buy french bread</li>
+	<li>Peel potatoes</li>
+	<li>Drink beers</li>
+</ul>
+<ul>
+	<li>Learn awk</li>
+	<li>* Sleep well</li>
+	<li>** Man up</li>
+	<li>*** Listen to birds</li>
+	<li>**** Do not procrastinate</li>
+</ul>

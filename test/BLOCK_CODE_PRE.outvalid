@@ -1,0 +1,22 @@
+<pre><code>printf "%s\n" "This is plain wrong!" &gt;&amp;2</code></pre>
+<pre><code>Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda5        12G  2.5G  8.6G  23% /
+dev             3.9G     0  3.9G   0% /dev
+run             4.0G  592K  3.9G   1% /run
+tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
+<pre><code>Device     Boot      Start         End     Sectors    Size  Id  Type
+/dev/sda1             2048  1045719039  1045716992  498,7G   5  Extended
+/dev/sda2       1129605120  1192519679    62914560     30G   7  HPFS/NTFS/exFAT
+/dev/sda3       1192519680  1465147391   272627712    130G   7  HPFS/NTFS/exFAT
+/dev/sda5             4096    25169919    25165824     12G  83  Linux
+/dev/sda6         25171968    29366271     4194304      2G  82  Linux swap / Solaris
+/dev/sda7  *      29368320    29573119      204800    100M  83  Linux
+
+/dev/sda8         29575168   449005567   419430400    200G  83  Linux
+
+# Comment inside code block
+/dev/sda9        449007616   459493375    10485760      5G  83  Linux
+/dev/sda10       459495424  1045719039   586223616  279,5G  83  Linux
+
+
+# Another comment for testing purpose</code></pre>
