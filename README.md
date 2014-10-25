@@ -45,7 +45,7 @@ and so on...
 
 #### Paragraph: `<p></p>`
 
-You just need to put your paragraph inside the file. Nothing else is needed:
+You just need to put your paragraph inside the file. Nothing else is required:
 
 ```
 DTLS memory leak from zero-length fragments (CVE-2014-3507)
@@ -100,8 +100,7 @@ tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
 
 #### Page links: `<ul><a></a></ul>`
 
-The "list" needs to be started by `[0]` or `[1]`. If not, it won't be
-matched.
+The "list" has to be started by `[0]` or `[1]`. If not, it won't be matched.
 
 ```
 [0] https://github.com/
@@ -121,10 +120,10 @@ matched.
 
 #### Comments
 
-There is now specific regex for the comments. If the line doesn't "satisfy"
+There is no specific regex for the comments. If the line doesn't "satisfy"
 the above specs, it'll be just ignored. However, starting comments by `#`
 is a perfect idea. The readers will be able to see them, in less than 0,25
-ms (yes, many config files use `#`).
+ms (yes, many configuration files use `#`).
 
 To avoid invalid HTML code, the symbols `>` `<` and `&` are automatically
 replaced by their HTML counterparts.
@@ -134,8 +133,8 @@ Regressions?
 
 To prevent introducing regressions when regexes are reworked, improved or
 expanded, a `sh` script was written to check and compare `ahrf` output. It's
-called `verify_regr`. It can be called via `your_favourite_shell verify_regr`
-or `make` for the lazy men. `make clean` deletes the invalid files from the
+called `verify_regr.sh`. It can be launched via `your_shell verify_regr` or
+`make` for the lazy men. `make clean` deletes the invalid files from the
 last checking. __I strongly advise you to run it for every changes!__
 
 The valid ouput can be found within the files `*.valid` inside the directory
@@ -149,8 +148,8 @@ I do not ask or force anybody to adopt it. I want to write my own documentation
 or cheatsheets using an easy "system".  
 `markdown` can be very frustrating when you use a lot of preformatted text
 or lists and the results is sometimes totally broken and wrong. For example,
-when I wrote that `README.md`, I encountered many times wrong output or bad
-matches.  
+when I wrote that `README.md`, I encountered many times malformed output or
+bad matches.  
 I'm not even talking about the dozens of differents variants /
 implementations... And do not tell me I don't know what I'm talking about
 because I "played" thousands of times with `markdown`.
