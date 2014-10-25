@@ -68,7 +68,7 @@ BEGIN { FS = "\n"; RS = "" }
 	printf("<ul>\n")
 	for (u=1; u<=NF; u++) {
 		gsub(/^[\t ]*/,"",$u)
-		if (match($u, "\[[0-9]+\]")) {
+		if (match($u, "\\[[0-9]+\\]")) {
 			# RSTART can be replaced by 1, because we removed useless tabs/spaces
 			num = substr($u,RSTART,RLENGTH)
 			url = substr($u,RSTART+RLENGTH+1)
