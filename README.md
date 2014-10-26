@@ -143,6 +143,9 @@ The valid ouput can be found within the files `*.valid` inside the directory
 Notes
 -----
 
+I used `nawk` when I wrote this script. It can be found
+[here](http://www.cs.princeton.edu/~bwk/btl.mirror/).
+
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
 I do not ask or force anybody to adopt it. I want to write my own documentation
 or cheatsheets using an easy "system".  
