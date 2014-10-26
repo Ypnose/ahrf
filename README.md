@@ -7,7 +7,7 @@ written in plain text files. They can be exported to HTML.
 The main goal was... readability.
 
   * One requirement: `awk`
-  * Supporting all `awk` variants (`nawk`, `mawk` or `gawk`)
+  * Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`)
   * Simple syntax
   * Easy to use / remember
   * Compatible with [wswsh](https://github.com/Ypnose/Wswsh)
