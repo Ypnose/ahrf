@@ -122,10 +122,10 @@ The "list" has to be started by `[0]` or `[1]`. If not, it won't be matched.
 
 There is no specific regex for the comments. If the line doesn't "satisfy"
 the above specs, it'll be just ignored. However, starting comments by `#`
-is a perfect idea. The readers will be able to see them, in less than 0,25
-ms (yes, many configuration files use `#`).
+is perfect. The readers will be able to see them, in less than 0,25 ms
+(yes, many configuration files use `#`).
 
-To avoid invalid HTML code, the symbols `>` `<` and `&` are automatically
+To avoid invalid HTML code, the symbols `>`, `<` and `&` are automatically
 replaced by their HTML counterparts.
 
 Regressions?
@@ -150,7 +150,7 @@ This script wasn't created to mimic or replace `markdown` syntax. Therefore,
 I do not ask or force anybody to adopt it. I want to write my own documentation
 or cheatsheets using an easy "system".  
 `markdown` can be very frustrating when you use a lot of preformatted text
-or lists and the results is sometimes totally broken and wrong. For example,
+or lists and the result is sometimes totally broken and wrong. For example,
 when I wrote that `README.md`, I encountered many times malformed output or
 bad matches.  
 I'm not even talking about the dozens of differents variants /
