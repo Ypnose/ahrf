@@ -6,12 +6,12 @@ ascii file format. I wrote it to share my personal documentation, which is
 written in plain text files. They can be exported to HTML.  
 The main goal was... readability.
 
-  * One requirement: `awk`
-  * Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`)
-  * Simple syntax
-  * Easy to use / remember
-  * Compatible with [wswsh](https://github.com/Ypnose/Wswsh)
-  * File format can be parsed by almost everything: `sed`, `sh`, `python` or `C`
+* One requirement: `awk`
+* Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`)
+* Simple syntax
+* Easy to use / remember
+* Compatible with [wswsh](https://github.com/Ypnose/Wswsh)
+* File format can be parsed by almost everything: `sed`, `sh`, `python` or `C`
 
 Syntax
 ------
@@ -139,6 +139,25 @@ last checking. __I strongly advise you to run it for every changes!__
 
 The valid ouput can be found within the files `*.valid` inside the directory
 `test`. It's a good idea to check those results to understand how `ahrf` behaves.
+
+Compatibility
+-------------
+
+The following `awk` variants were validated using the regressions test (
+at this commit SHA: 98b4273c5a4afe045ec0ecdcd5a83a2f79791517). No issues
+triggered. The versions are printed here:
+
+`nawk`:
+	Dec 20, 2012
+
+`mawk` (some issues before this version):
+	mawk 1.3.4 20141027
+
+OpenBSD `nawk`
+	awk version 20110810
+
+`gawk`
+	GNU Awk 4.1.1
 
 Notes
 -----
