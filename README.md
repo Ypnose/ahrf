@@ -146,7 +146,7 @@ Compatibility
 The following `awk` variants were validated using the regressions test (no
 issues triggered), at this commit:
 
-* SHA: 98b4273c5a4afe045ec0ecdcd5a83a2f79791517.
+* SHA: 98b4273c5a4afe045ec0ecdcd5a83a2f79791517
 
 The versions are printed here:
 
