@@ -143,20 +143,27 @@ The valid ouput can be found within the files `*.valid` inside the directory
 Compatibility
 -------------
 
-The following `awk` variants were validated using the regressions test (
-at this commit SHA: 98b4273c5a4afe045ec0ecdcd5a83a2f79791517). No issues
-triggered. The versions are printed here:
+The following `awk` variants were validated using the regressions test (no
+issues triggered), at this commit:
 
-`nawk`:  
+* SHA: 98b4273c5a4afe045ec0ecdcd5a83a2f79791517.
+
+The versions are printed here:
+
+`nawk`:
+
 	Dec 20, 2012
 
-`mawk` (some issues before this version):  
+`mawk` (some issues before this version):
+
 	mawk 1.3.4 20141027
 
-OpenBSD `nawk`:  
+OpenBSD `nawk`:
+
 	awk version 20110810
 
-`gawk`:  
+`gawk`:
+
 	GNU Awk 4.1.1
 
 Notes
