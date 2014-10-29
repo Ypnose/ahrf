@@ -7,7 +7,8 @@ written in plain text files. They can be exported to HTML.
 The main goal was... readability.
 
 * One requirement: `awk`
-* Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`)
+* Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`) (cf
+"[Compatibility](https://github.com/Ypnose/ahrf#compatibility)"
 * Simple syntax
 * Easy to use / remember
 * Compatible with [wswsh](https://github.com/Ypnose/Wswsh)
@@ -152,7 +153,8 @@ The versions are printed here:
 
 * `nawk`: `Dec 20, 2012`
 
-* `mawk` (some problems before this version): `mawk 1.3.4 20141027`
+* `mawk` (some [problems](https://github.com/Ypnose/ahrf/issues/1)
+before this version): `mawk 1.3.4 20141027`
 
 * OpenBSD `nawk`: `awk version 20110810`
 
