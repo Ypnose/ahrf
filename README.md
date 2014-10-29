@@ -150,21 +150,13 @@ issues triggered), at this commit:
 
 The versions are printed here:
 
-`nawk`:
+* `nawk`: `Dec 20, 2012`
 
-	Dec 20, 2012
+* `mawk` (some problems before this version): `mawk 1.3.4 20141027`
 
-`mawk` (some issues before this version):
+* OpenBSD `nawk`: `awk version 20110810`
 
-	mawk 1.3.4 20141027
-
-OpenBSD `nawk`:
-
-	awk version 20110810
-
-`gawk`:
-
-	GNU Awk 4.1.1
+* `gawk`: `GNU Awk 4.1.1`
 
 Notes
 -----
