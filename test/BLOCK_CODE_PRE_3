@@ -35,6 +35,16 @@ BLOCK 1
 	
 ====
 
+# Less than 4 "=". Simply unmatched
+
+==
+TWO EQUALS TEST
+==
+
+===
+THREE EQUALS TEST
+===
+
 # More than 4 "=" (unmatched "for now")
 
 =====
