@@ -8,7 +8,7 @@ The main goal was... readability.
 
 * One requirement: `awk`
 * Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`) (cf
-"[Compatibility](https://github.com/Ypnose/ahrf#compatibility)"
+"[Compatibility](https://github.com/Ypnose/ahrf#compatibility)")
 * Simple syntax
 * Easy to use / remember
 * Compatible with [wswsh](https://github.com/Ypnose/Wswsh)
@@ -145,9 +145,8 @@ Compatibility
 -------------
 
 The following `awk` variants were validated using the regressions test (no
-issues triggered), at this commit:
-
-* SHA: 98b4273c5a4afe045ec0ecdcd5a83a2f79791517
+issues triggered), at this commit id:
+[e3441c7](https://github.com/Ypnose/ahrf/tree/e3441c7143c5d705430c895ebdf4b9e39a0be08f)
 
 The versions are printed here:
 
