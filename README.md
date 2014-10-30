@@ -150,14 +150,14 @@ issues triggered), at this commit id:
 
 The versions are printed here:
 
-* `nawk` -> `Dec 20, 2012`
+* `nawk` - `Dec 20, 2012`
 
 * `mawk` (some [problems](https://github.com/Ypnose/ahrf/issues/1)
-before this version) -> `mawk 1.3.4 20141027`
+before this version) - `mawk 1.3.4 20141027`
 
-* OpenBSD `nawk` -> `awk version 20110810`
+* OpenBSD `nawk` - `awk version 20110810`
 
-* `gawk` -> `GNU Awk 4.1.1`
+* `gawk` - `GNU Awk 4.1.1`
 
 * OSX `awk` (probably a `nawk`), but I don't have the exact version number.
 However, I do not plan to test this "variant" for every new changes.
