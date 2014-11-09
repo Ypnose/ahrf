@@ -23,7 +23,7 @@ BEGIN { FS = "\n"; RS = "" }
 }
 
 # Paragraph
-/^[A-Za-z0-9]+/ {
+/^[A-Za-z0-9_]+/ {
 	printf("<p>%s</p>\n\n", $0)
 	next
 }
