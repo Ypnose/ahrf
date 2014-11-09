@@ -21,3 +21,13 @@ Nam non nulla vitae odio placerat congue. Praesent ornare, nisl ac gravida
 accumsan, orci nisl interdum est, a rutrum leo libero in nisi. Aliquam gravida
 nunc sed turpis mollis placerat. Vestibulum convallis dolor ut quam tempus
 ultricies. Nunc tincidunt erat mauris.
+
+_SSL/TLS connections typically allow for encrypted traffic to pass_ between
+two parties where only the intended senders and recipients can decrypt data.
+In the event of a man-in-the-middle attack, an attacker could intercept
+an encrypted data stream allowing them to decrypt, view and then manipulate
+said data.
+
+_Anonymous ECDH denial of service (CVE-2014-3470) — Denial of service_
+Recovering OpenSSL ECDSA Nonces Using the FLUSH+RELOAD Cache Side-channel
+Attack.
