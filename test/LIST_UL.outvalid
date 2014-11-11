@@ -1,7 +1,4 @@
 <ul>
-	<li>No space</li>
-</ul>
-<ul>
 	<li>No indent</li>
 </ul>
 <ul>
@@ -29,9 +26,6 @@
 	<li>Drink beers</li>
 </ul>
 <ul>
-	<li>Learn awk</li>
-	<li>* Sleep well</li>
-	<li>** Man up</li>
-	<li>*** Listen to birds</li>
-	<li>**** Do not procrastinate</li>
+	<li>Is this valid?</li>
+	<li>Yes it is!</li>
 </ul>

@@ -22,7 +22,7 @@ for f in $TESTREG; do
 	[ $? -ne 0 ] && exit 1
 	diff -u "${f}.${OUTE}" "${f}.${GENE}"
 	if [ $? -eq 0 ]; then
-		printf "%-20s%s\n" "* $f" "... OK" && rm "${f}.${GENE}"
+		printf "%-20s%s\n" "* $f" "...  OK" && rm "${f}.${GENE}"
 	fi
 done
 

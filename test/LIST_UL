@@ -1,6 +1,6 @@
 # UNORDERED LIST: <ul></ul>
 
-# No space (before and after '*')
+# No space (Unmatched)
 
 *No space
 
@@ -37,6 +37,12 @@
 			* Three tabs (with a empty line then)
 			
 
+# Unmatched list
+
+*Some cigars
+*Drink alcohol
+*Be drunk
+
 # Normal list
 
 * Eat cooked meat
@@ -44,10 +50,17 @@
 * Peel potatoes
 * Drink beers
 
-# List with '*' with increment
+# List with '*' with increment (disable it for now)
 
-* Learn awk
-** Sleep well
-*** Man up
-**** Listen to birds
-***** Do not procrastinate
+#* Learn awk
+#** Sleep well
+#*** Man up
+#**** Listen to birds
+#***** Do not procrastinate
+
+# List with valid lines and then invalid lines
+
+* Is this valid?
+* Yes it is!
+Hehe SNEAKY!
+Caught...

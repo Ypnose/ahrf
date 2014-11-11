@@ -1,4 +1,4 @@
-#!/home/ypnose/Dev/AWK/nawk -f
+#!/home/ypnose/Dev/AWK/mawk-1.3.4-20141027 -f
 
 BEGIN { FS = "\n"; RS = "" }
 
@@ -45,17 +45,12 @@ BEGIN { FS = "\n"; RS = "" }
 }
 
 # List
-/^[\t ]*\*/ {
+/^[\t ]*\* +/ {
 	printf("<ul>\n")
 	for (l=1; l<=NF; l++) {
 		gsub(/^[\t ]*/,"",$l)
-		if ($l != "") {
-			syb = substr($l,2,1)
-			if (syb == " ") {
-				str = substr($l,3)
-			} else {
-				str = substr($l,2)
-			}
+		if ($l ~ /\* +/) {
+			str = substr($l,3)
 			printf("\t<li>%s</li>\n", str)
 		}
 	}
