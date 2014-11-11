@@ -29,3 +29,9 @@
 	<li>Is this valid?</li>
 	<li>Yes it is!</li>
 </ul>
+<ul>
+	<li>Line 1 has one space</li>
+	<li>Line 2 has two spaces</li>
+	<li>Line 3 has three spaces</li>
+	<li>I'm not counting anymore</li>
+</ul>

@@ -1,4 +1,4 @@
-#!/home/ypnose/Dev/AWK/mawk-1.3.4-20141027 -f
+#!/home/ypnose/Dev/AWK/nawk -f
 
 BEGIN { FS = "\n"; RS = "" }
 
@@ -50,8 +50,10 @@ BEGIN { FS = "\n"; RS = "" }
 	for (l=1; l<=NF; l++) {
 		gsub(/^[\t ]*/,"",$l)
 		if ($l ~ /\* +/) {
-			str = substr($l,3)
-			printf("\t<li>%s</li>\n", str)
+			# Temporary!!!
+			gsub(/\* +/,"",$l)
+			#str = substr($l,3)
+			printf("\t<li>%s</li>\n", $l)
 		}
 	}
 	printf("</ul>\n")

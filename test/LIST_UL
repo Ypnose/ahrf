@@ -64,3 +64,10 @@
 * Yes it is!
 Hehe SNEAKY!
 Caught...
+
+# List with (many) spaces after "*"
+
+* Line 1 has one space
+*  Line 2 has two spaces
+*   Line 3 has three spaces
+*              I'm not counting anymore
