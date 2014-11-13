@@ -12,7 +12,7 @@ BEGIN { FS = "\n"; RS = "" }
 
 # h1, h2, h3, h4, h5, h6
 /^[\t ]*:/ {
-	match($0, ":+")
+	match($0,":+")
 	cnt = RLENGTH
 	gsub(/^[\t ]*:+[\t ]*|[\t ]*:+[\t ]*$/,"")
 	# length($0) would also work
@@ -51,9 +51,11 @@ BEGIN { FS = "\n"; RS = "" }
 		gsub(/^[\t ]*/,"",$l)
 		if ($l ~ /\* +/) {
 			# Temporary!!!
-			gsub(/\* +/,"",$l)
-			#str = substr($l,3)
-			printf("\t<li>%s</li>\n", $l)
+			match($l,"\\* +")
+			str = substr($l,RSTART+RLENGTH)
+			# Debug
+			#print str
+			printf("\t<li>%s</li>\n", str)
 		}
 	}
 	printf("</ul>\n")
@@ -65,7 +67,7 @@ BEGIN { FS = "\n"; RS = "" }
 	printf("<ul>\n")
 	for (u=1; u<=NF; u++) {
 		gsub(/^[\t ]*/,"",$u)
-		if (match($u, "\\[[0-9]+\\]")) {
+		if (match($u,"\\[[0-9]+\\]")) {
 			# RSTART can be replaced by 1, because we removed useless tabs/spaces
 			num = substr($u,RSTART,RLENGTH)
 			url = substr($u,RSTART+RLENGTH+1)
