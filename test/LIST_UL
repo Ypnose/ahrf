@@ -71,3 +71,9 @@ Caught...
 *  Line 2 has two spaces
 *   Line 3 has three spaces
 *              I'm not counting anymore
+
+# List with '*' in the lines
+
+* * Will it pass?
+* ** Let's hope so...
+* *** Testing!

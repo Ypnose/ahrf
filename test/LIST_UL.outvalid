@@ -35,3 +35,8 @@
 	<li>Line 3 has three spaces</li>
 	<li>I'm not counting anymore</li>
 </ul>
+<ul>
+	<li>* Will it pass?</li>
+	<li>** Let's hope so...</li>
+	<li>*** Testing!</li>
+</ul>
