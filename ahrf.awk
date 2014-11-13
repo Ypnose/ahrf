@@ -1,4 +1,4 @@
-#!/home/ypnose/Dev/AWK/nawk -f
+#!/usr/bin/awk -f
 
 BEGIN { FS = "\n"; RS = "" }
 

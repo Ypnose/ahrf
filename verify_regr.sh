@@ -2,8 +2,14 @@
 # Script by Ypnose - http://ypnose.org
 
 WORKDIR="test"
-TESTREG="BLOCK_CODE_PRE BLOCK_CODE_PRE_2 BLOCK_CODE_PRE_3 
- ESCAPE_CHARS LIST_UL PAGE_LINKS_A PARAGRAPH_P TITLES_H"
+TESTREG="BLOCK_CODE_PRE
+ BLOCK_CODE_PRE_2
+ BLOCK_CODE_PRE_3
+ ESCAPE_CHARS
+ LIST_UL
+ PAGE_LINKS_A
+ PARAGRAPH_P
+ TITLES_H"
 OUTE="outvalid"
 GENE="gen"
 
@@ -18,7 +24,7 @@ for f in $TESTREG; do
 		printf "%s\n" "$f / ${f}.${OUTE} is missing!" >&2
 		exit 1
 	fi
-	../ahrf.awk "$f" >"${f}.${GENE}"
+	"${1:-awk}" -f ../ahrf.awk "$f" >"${f}.${GENE}"
 	[ $? -ne 0 ] && exit 1
 	diff -u "${f}.${OUTE}" "${f}.${GENE}"
 	if [ $? -eq 0 ]; then
