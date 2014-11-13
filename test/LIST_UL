@@ -50,14 +50,6 @@
 * Peel potatoes
 * Drink beers
 
-# List with '*' with increment (disable it for now)
-
-#* Learn awk
-#** Sleep well
-#*** Man up
-#**** Listen to birds
-#***** Do not procrastinate
-
 # List with valid lines and then invalid lines
 
 * Is this valid?
@@ -72,7 +64,7 @@ Caught...
 *   Line 3 has three spaces
 *              I'm not counting anymore
 
-# List with '*' in the lines
+# List with '*' character inside the line(s)
 
 * * Will it pass?
 * ** Let's hope so...
