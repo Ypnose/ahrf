@@ -7,7 +7,7 @@ written in plain text files. They can be exported to HTML.
 The main goal was... readability.
 
 * One requirement: `awk`
-* Supporting many `awk` variants (`nawk`, `gawk` or OpenBSD `awk`) (cf
+* Supporting many `awk` variants (`nawk`, `mawk`, `gawk` or OpenBSD `awk`) (cf
 "[Compatibility](https://github.com/Ypnose/ahrf#compatibility)")
 * Simple syntax
 * Easy to use / remember
@@ -42,6 +42,13 @@ and so on...
 :::: :::: for <h4><h4>
 ::::: ::::: for <h5><h5>
 :::::: :::::: for <h6><h6>
+```
+
+It's possible to define a heading, without the second `:::` field (but it
+would be less readable):
+
+```
+::: My title without the second field
 ```
 
 #### Paragraph: `<p></p>`
@@ -135,11 +142,12 @@ Regressions?
 To prevent introducing regressions when regexes are reworked, improved or
 expanded, a `sh` script was written to check and compare `ahrf` output. It's
 called `verify_regr.sh`. It can be launched via `your_shell verify_regr` or
-`make` for the lazy men. `make clean` deletes the invalid files from the
-last checking. __I strongly advise you to run it for every changes!__
+`make check` for the lazy men. `make clean` deletes the invalid files from
+the last checking. __I strongly advise you to run it for every changes!__
 
-The valid ouput can be found within the files `*.valid` inside the directory
-`test`. It's a good idea to check those results to understand how `ahrf` behaves.
+The valid ouput can be found within the files `*.outvalid` inside the directory
+`test`.
+It's a __VERY__ good idea to check those results to understand how `ahrf` behaves.
 
 Compatibility
 -------------
@@ -193,3 +201,5 @@ Copyright
 ---------
 
 Code created by Ypnose, under BSD (3-Clause) License
+Thanks to Alexander for serving me as guinea pig. After all, I'm not the
+only man using ahrf, on this planet.
