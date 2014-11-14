@@ -200,6 +200,6 @@ Maybe. I'm not enough confident to write a bugless script. Report them!
 Copyright
 ---------
 
-Code created by Ypnose, under BSD (3-Clause) License
+Code created by Ypnose, under BSD (3-Clause) License  
 Thanks to Alexander for serving me as guinea pig. After all, I'm not the
 only man using ahrf, on this planet.
