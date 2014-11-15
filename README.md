@@ -154,7 +154,7 @@ Compatibility
 
 The following `awk` variants were validated using the regressions test (no
 issues triggered), at this commit id:
-[e3441c7](https://github.com/Ypnose/ahrf/tree/e3441c7143c5d705430c895ebdf4b9e39a0be08f)
+[f6cdfa2](https://github.com/Ypnose/ahrf/tree/f6cdfa27a41b7747d81dd9293753eae654aed71f)
 
 The versions are printed here:
 
@@ -175,6 +175,10 @@ Notes
 
 I used `nawk` when I wrote this script. It can be found
 [here](http://www.cs.princeton.edu/~bwk/btl.mirror/).
+
+`make all` (or simply `make`) will launch the tests for every variants
+specified in `AWKV`. With your system, the executables are probably
+located in a different directory. So, try to change `BDIR` accordingly.
 
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
 I do not ask or force anybody to adopt it. I want to write my own documentation
@@ -201,5 +205,4 @@ Copyright
 ---------
 
 Code created by Ypnose, under BSD (3-Clause) License  
-Thanks to Alexander for serving me as guinea pig. After all, I'm not the
-only man using ahrf, on this planet.
+Thanks to Alexander for serving me as a guinea pig.
