@@ -50,11 +50,8 @@ BEGIN { FS = "\n"; RS = "" }
 	for (l=1; l<=NF; l++) {
 		gsub(/^[\t ]*/,"",$l)
 		if ($l ~ /\* +/) {
-			# Temporary!!!
 			match($l,"\\* +")
 			str = substr($l,RSTART+RLENGTH)
-			# Debug
-			#print str
 			printf("\t<li>%s</li>\n", str)
 		}
 	}
