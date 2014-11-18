@@ -200,6 +200,8 @@ Issues
 ------
 
 Maybe. I'm not enough confident to write a bugless script. Report them!
+If you notice something wrong, try to provide me an ascii file with your
+lines. I'll be able to work on it.
 
 Copyright
 ---------
