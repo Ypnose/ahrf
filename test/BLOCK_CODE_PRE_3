@@ -45,12 +45,20 @@ TWO EQUALS TEST
 THREE EQUALS TEST
 ===
 
-# More than 4 "=" (unmatched "for now")
+# More than 4 "="
 
 =====
 FIVE EQUALS
 =====
 
 =======
-SEVEN EQUALS
+SEVEN EQUALS (MORE!!!)
 =======
+
+==============
+14 EQUALS
+ 
+BOOTING ... [OK]
+ 
+FILESYSTEM corrupted. Run fsck(8).
+==============
