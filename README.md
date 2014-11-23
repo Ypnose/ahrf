@@ -113,7 +113,7 @@ The "list" has to be started by `[0]` or `[1]`. If not, it won't be matched.
 ```
 [0] https://github.com/
 [1] http://netbsd.org/
-[2] http://ypnose.org/
+[2] http://ywstd.fr/
 [666] http://www.libressl.org/
 ```
 
@@ -121,7 +121,7 @@ The "list" has to be started by `[0]` or `[1]`. If not, it won't be matched.
 <ul>
 	<li>[0] <a href="https://github.com/">https://github.com/</a></li>
 	<li>[1] <a href="http://netbsd.org/">http://netbsd.org/</a></li>
-	<li>[2] <a href="http://ypnose.org/">http://ypnose.org/</a></li>
+	<li>[2] <a href="http://ywstd.fr/">http://ywstd.fr/</a></li>
 	<li>[666] <a href="http://www.libressl.org/">http://www.libressl.org/</a></li>
 </ul>
 ```

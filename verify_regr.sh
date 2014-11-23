@@ -1,5 +1,5 @@
 #!/bin/sh
-# Script by Ypnose - http://ypnose.org
+# Script by Ypnose - http://ywstd.fr
 
 WORKDIR="test"
 TESTREG="BLOCK_CODE_PRE
