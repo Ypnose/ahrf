@@ -165,7 +165,7 @@ before this version) - `mawk 1.3.4 20141027`
 
 * OpenBSD `nawk` - `awk version 20110810`
 
-* NetBSD 7.0_BETA `awk` - `awk version 20121220` (thanks to @justincormack)
+* NetBSD 7.0_BETA `awk` - `awk version 20121220` (thanks to [@justincormack](https://github.com/justincormack))
 
 * `gawk` - `GNU Awk 4.1.1`
 
