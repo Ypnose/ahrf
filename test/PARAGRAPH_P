@@ -31,3 +31,12 @@ said data.
 _Anonymous ECDH denial of service (CVE-2014-3470) — Denial of service_
 Recovering OpenSSL ECDSA Nonces Using the FLUSH+RELOAD Cache Side-channel
 Attack.
+
+
+OpenSSL is written by monkeys  
+The decision to fork OpenSSL is bound to be controversial given that
+OpenSSL powers hundreds of thousands of Web servers.  
+When asked why he wanted to start over instead of helping to make
+OpenSSL better, de Raadt said the existing code is too much of a mess.   
+"Our group removed half of the OpenSSL source tree in a week.   
+It was discarded leftovers," de Raadt told Ars in an e-mail.
