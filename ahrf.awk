@@ -24,16 +24,16 @@ BEGIN { FS = "\n"; RS = "" }
 
 # Paragraph
 /^[A-Za-z0-9_]+/ {
-	#printf("<p>%s</p>\n\n", $0)
 	printf("<p>")
-	for (p=1; p<=NF; p++) {
+	for (p=1; p<NF; p++) {
 		if ($p ~ / +$/) {
+			gsub(/ +$/,"",$p)
 			printf("%s<br>\n", $p)
 		} else {
 			printf("%s\n", $p)
 		}
 	}
-	printf("</p>\n\n")
+	printf("%s</p>\n\n", $p)
 	next
 }
 
