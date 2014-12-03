@@ -29,3 +29,11 @@ said data.</p>
 Recovering OpenSSL ECDSA Nonces Using the FLUSH+RELOAD Cache Side-channel
 Attack.</p>
 
+<p>OpenSSL is written by monkeys<br>
+The decision to fork OpenSSL is bound to be controversial given that
+OpenSSL powers hundreds of thousands of Web servers.<br>
+When asked why he wanted to start over instead of helping to make
+OpenSSL better, de Raadt said the existing code is too much of a mess.<br>
+"Our group removed half of the OpenSSL source tree in a week.<br>
+It was discarded leftovers," de Raadt told Ars in an e-mail.</p>
+
