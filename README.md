@@ -70,6 +70,8 @@ OpenSSL TLS protocol downgrade attack (CVE-2014-3511)</p>
 
 #### Code block: `<pre><code></code></pre>`
 
+Code blocks must start by 4 '=' at least.
+
 ```
 ====
 Filesystem      Size  Used Avail Use% Mounted on
@@ -88,7 +90,20 @@ run             4.0G  592K  3.9G   1% /run
 tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
 ```
 
+```
+=======
+ls /usr/local/etc/rc.d/
+=======
+```
+
+```
+<pre><code>ls /usr/local/etc/rc.d/</code></pre>
+```
+
 #### Unordered list: `<ul><li></li></ul>`
+
+You need to add one or more space(s) after `*`. If you omit that, the
+item(s) will be ignored.
 
 ```
 * Eat cooked meat
@@ -103,6 +118,21 @@ tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
 	<li>Buy french bread</li>
 	<li>Peel potatoes</li>
 	<li>Drink beers</li>
+</ul>
+```
+
+```
+*    Homemade sausage
+*  Apple pie
+*Be fast
+*         Don't be in a hurry
+```
+
+```
+<ul>
+	<li>Homemade sausage</li>
+	<li>Apple pie</li>
+	<li>Don't be in a hurry</li>
 </ul>
 ```
 
@@ -132,6 +162,8 @@ There is no specific regex for the comments. If the line doesn't "satisfy"
 the above specs, it'll be just ignored. However, starting comments by `#`
 is perfect. The readers will be able to see them, in less than 0,25 ms
 (yes, many configuration files use `#`).
+
+#### Common shell symbols
 
 To avoid invalid HTML code, the symbols `>`, `<` and `&` are automatically
 replaced by their HTML counterparts.
