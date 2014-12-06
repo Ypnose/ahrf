@@ -33,6 +33,12 @@ prints no-XXX; otherwise it returns 1 and prints XXX.</p>
 visible to utilities (like ps(1) under UNIX) this form should only be
 used where security is not important.</p>
 
+<p>"I fix things now and then, more often tweak HTML and make scripts to do
+things." Dennis Ritchie</p>
+
+<p>"Controlling complexity is the essence of computer programming."
+Brian Kernighan</p>
+
 <p>OpenSSL is written by monkeys<br>
 The decision to fork OpenSSL is bound to be controversial given that
 OpenSSL powers hundreds of thousands of Web servers.<br>
