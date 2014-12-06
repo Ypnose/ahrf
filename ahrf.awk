@@ -23,7 +23,7 @@ BEGIN { FS = "\n"; RS = "" }
 }
 
 # Paragraph
-/^[A-Za-z0-9_]+/ {
+/^[A-Za-z0-9_(]+/ {
 	printf("<p>")
 	for (p=1; p<NF; p++) {
 		if ($p ~ / +$/) {
