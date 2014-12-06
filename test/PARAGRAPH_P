@@ -28,7 +28,13 @@ _Anonymous ECDH denial of service (CVE-2014-3470) — Denial of service_
 Recovering OpenSSL ECDSA Nonces Using the FLUSH+RELOAD Cache Side-channel
 Attack.
 
+(The pseudo-command no-XXX tests whether a command of the specified name)
+is available. If no command named XXX exists, it returns 0 (success) and
+prints no-XXX; otherwise it returns 1 and prints XXX.
 
+(LAST REVIEW) The actual password is password. Since the password is
+visible to utilities (like ps(1) under UNIX) this form should only be
+used where security is not important.
 
 # Newline(s) paragraph
 
