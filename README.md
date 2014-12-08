@@ -193,7 +193,7 @@ The versions are printed here:
 * `nawk` - `Dec 20, 2012`
 
 * `mawk` (some [problems](https://github.com/Ypnose/ahrf/issues/1)
-before this version) - `mawk 1.3.4 20141027`
+before this version) - `mawk 1.3.4 20141027` & `mawk-1.3.4-20141206`
 
 * OpenBSD `nawk` - `awk version 20110810`
 
@@ -211,7 +211,7 @@ I used `nawk` when I wrote this script. It can be found
 [here](http://www.cs.princeton.edu/~bwk/btl.mirror/).
 
 `make all` (or simply `make`) will launch the tests for every variants
-specified in `AWKV`. With your system, the executables are probably
+specified in `AWKV`. On your system, the executables are probably
 located in a different directory. So, try to change `BDIR` accordingly.
 
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
