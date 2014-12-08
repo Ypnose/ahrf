@@ -193,7 +193,7 @@ The versions are printed here:
 * `nawk` - `Dec 20, 2012`
 
 * `mawk` (some [problems](https://github.com/Ypnose/ahrf/issues/1)
-before this version) - `mawk 1.3.4 20141027` & `mawk-1.3.4-20141206`
+before `20141027`) - `mawk 1.3.4 20141027` & `mawk-1.3.4-20141206`
 
 * OpenBSD `nawk` - `awk version 20110810`
 
@@ -235,7 +235,7 @@ Issues
 
 Maybe. I'm not enough confident to write a bugless script. Report them!
 If you notice something wrong, try to provide me an ascii file with your
-lines. I'll be able to work on it.
+lines. I'll be able to work on/debug it.
 
 Copyright
 ---------
