@@ -195,7 +195,7 @@ Compatibility
 
 The following `awk` variants were validated using the regressions test (no
 issues triggered), at this commit id:
-[6933f5e](https://github.com/Ypnose/ahrf/tree/6933f5e)
+[6933f5e](https://github.com/Ypnose/ahrf/tree/6933f5e) (1.0)
 
 The versions are printed here:
 
