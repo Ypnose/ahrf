@@ -68,9 +68,16 @@ Race condition in ssl_parse_serverhello_tlsext (CVE-2014-3509)
 OpenSSL TLS protocol downgrade attack (CVE-2014-3511)</p>
 ```
 
+Paragraphs can start by:
+
+* `0-9`: From `0` to `9`
+* `A-Z`: All letters uppercase
+* `a-z`: All letters lowercase
+* `_`, `(`, `"`
+
 #### Code block: `<pre><code></code></pre>`
 
-Code blocks must start by 4 '=' at least.
+Code blocks must start by 4 `=` at least.
 
 ```
 ====
@@ -168,6 +175,12 @@ is perfect. The readers will be able to see them, in less than 0,25 ms
 To avoid invalid HTML code, the symbols `>`, `<` and `&` are automatically
 replaced by their HTML counterparts.
 
+
+The valid ouput can be found within the files `*.outvalid` inside the
+directory `test`.
+It's a __VERY__ good idea to check those results to understand how `ahrf`
+behaves.
+
 Regressions?
 ------------
 
@@ -176,10 +189,6 @@ expanded, a `sh` script was written to check and compare `ahrf` output. It's
 called `verify_regr.sh`. It can be launched via `your_shell verify_regr` or
 `make check` for the lazy men. `make clean` deletes the invalid files from
 the last checking. __I strongly advise you to run it for every changes!__
-
-The valid ouput can be found within the files `*.outvalid` inside the directory
-`test`.
-It's a __VERY__ good idea to check those results to understand how `ahrf` behaves.
 
 Compatibility
 -------------
