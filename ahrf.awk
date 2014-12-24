@@ -10,13 +10,6 @@ BEGIN { FS = "\n"; RS = "" }
 	gsub(/>/,"\\&gt;")
 }
 
-# UGLY WIP
-/^[\t ]*%+/ {
-	gsub(/^[\t ]*%+[\t ]*/,"")
-	printf("<!-- %s -->\n", $0)
-	next
-}
-
 # h1, h2, h3, h4, h5, h6
 /^[\t ]*:/ {
 	match($0,":+")
