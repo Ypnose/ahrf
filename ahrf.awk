@@ -46,8 +46,6 @@ BEGIN { FS = "\n"; RS = "" }
 			gsub(/^ +$/,"",$c)
 			printf("%s\n", $c)
 		}
-		# Solve "space" bug! Less crado (gsub).
-		#gsub(/^ +/,"",$NF)
 		printf("%s</code></pre>\n", $NF)
 	}
 	next
