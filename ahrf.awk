@@ -23,22 +23,29 @@ BEGIN { FS = "\n"; RS = "" }
 }
 
 # Paragraph
-/^[A-Za-z0-9_(]+/ {
-	printf("<p>%s</p>\n\n", $0)
+/^[A-Za-z0-9_("]+/ {
+	printf("<p>")
+	for (p=1; p<NF; p++) {
+		if ($p ~ / +$/) {
+			gsub(/ +$/,"",$p)
+			printf("%s<br>\n", $p)
+		} else {
+			printf("%s\n", $p)
+		}
+	}
+	printf("%s</p>\n\n", $p)
 	next
 }
 
 # Code
-/^====/ {
-	if (NF > 2 && $NF == "====") {
-		gsub(/^[\t ]*====[\t ]*\n|\n[\t ]*====[\t ]*$/,"")
+/^====+/ {
+	if (NF > 2 && $NF ~ /====+/) {
+		gsub(/^[\t ]*====+[\t ]*\n|\n[\t ]*====+[\t ]*$/,"")
 		printf("<pre><code>")
 		for (c=1; c<NF; c++) {
 			gsub(/^ +$/,"",$c)
 			printf("%s\n", $c)
 		}
-		# Solve "space" bug! Less crado (gsub).
-		gsub(/^ +/,"",$NF)
 		printf("%s</code></pre>\n", $NF)
 	}
 	next

@@ -40,3 +40,30 @@ nana <he
   <<<<
   end of life / line
 ====
+
+# All in one...
+
+========
+ 
+========
+ALL IN ONE LINE 1
+ ==
+ ===
+ ====
+ =====
+	====
+	===
+		==
+		LINE 2 after equals
+======
+	/dev
+		/usr
+ /etc
+			BOOT
+ 
+ 
+WILL IT WORK? WHAT'S YOUR BET?
+==========
+    SEPARATE
+    ========
+=====

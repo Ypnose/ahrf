@@ -68,7 +68,16 @@ Race condition in ssl_parse_serverhello_tlsext (CVE-2014-3509)
 OpenSSL TLS protocol downgrade attack (CVE-2014-3511)</p>
 ```
 
+Paragraphs can start by:
+
+* `0-9`: From `0` to `9`
+* `A-Z`: All letters uppercase
+* `a-z`: All letters lowercase
+* `_`, `(`, `"`
+
 #### Code block: `<pre><code></code></pre>`
+
+Code blocks must start by 4 `=` at least.
 
 ```
 ====
@@ -88,7 +97,20 @@ run             4.0G  592K  3.9G   1% /run
 tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
 ```
 
+```
+=======
+ls /usr/local/etc/rc.d/
+=======
+```
+
+```
+<pre><code>ls /usr/local/etc/rc.d/</code></pre>
+```
+
 #### Unordered list: `<ul><li></li></ul>`
+
+You need to add one or more space(s) after `*`. If you omit that, the
+item(s) will be ignored.
 
 ```
 * Eat cooked meat
@@ -103,6 +125,21 @@ tmpfs           4.0G     0  4.0G   0% /dev/shm</code></pre>
 	<li>Buy french bread</li>
 	<li>Peel potatoes</li>
 	<li>Drink beers</li>
+</ul>
+```
+
+```
+*    Homemade sausage
+*  Apple pie
+*Be fast
+*         Don't be in a hurry
+```
+
+```
+<ul>
+	<li>Homemade sausage</li>
+	<li>Apple pie</li>
+	<li>Don't be in a hurry</li>
 </ul>
 ```
 
@@ -133,8 +170,16 @@ the above specs, it'll be just ignored. However, starting comments by `#`
 is perfect. The readers will be able to see them, in less than 0,25 ms
 (yes, many configuration files use `#`).
 
+#### Common shell symbols
+
 To avoid invalid HTML code, the symbols `>`, `<` and `&` are automatically
 replaced by their HTML counterparts.
+
+
+The valid ouput can be found within the files `*.outvalid` inside the
+directory `test`.
+It's a __VERY__ good idea to check those results to understand how `ahrf`
+behaves.
 
 Regressions?
 ------------
@@ -145,23 +190,19 @@ called `verify_regr.sh`. It can be launched via `your_shell verify_regr` or
 `make check` for the lazy men. `make clean` deletes the invalid files from
 the last checking. __I strongly advise you to run it for every changes!__
 
-The valid ouput can be found within the files `*.outvalid` inside the directory
-`test`.
-It's a __VERY__ good idea to check those results to understand how `ahrf` behaves.
-
 Compatibility
 -------------
 
 The following `awk` variants were validated using the regressions test (no
 issues triggered), at this commit id:
-[f6cdfa2](https://github.com/Ypnose/ahrf/tree/f6cdfa27a41b7747d81dd9293753eae654aed71f)
+[6933f5e](https://github.com/Ypnose/ahrf/tree/6933f5e)
 
 The versions are printed here:
 
 * `nawk` - `Dec 20, 2012`
 
 * `mawk` (some [problems](https://github.com/Ypnose/ahrf/issues/1)
-before this version) - `mawk 1.3.4 20141027`
+before `20141027`) - `mawk 1.3.4 20141027` & `mawk-1.3.4-20141206`
 
 * OpenBSD `nawk` - `awk version 20110810`
 
@@ -179,7 +220,7 @@ I used `nawk` when I wrote this script. It can be found
 [here](http://www.cs.princeton.edu/~bwk/btl.mirror/).
 
 `make all` (or simply `make`) will launch the tests for every variants
-specified in `AWKV`. With your system, the executables are probably
+specified in `AWKV`. On your system, the executables are probably
 located in a different directory. So, try to change `BDIR` accordingly.
 
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
@@ -202,6 +243,8 @@ Issues
 ------
 
 Maybe. I'm not enough confident to write a bugless script. Report them!
+If you notice something wrong, try to provide me an ascii file with your
+lines. I'll be able to work on/debug it.
 
 Copyright
 ---------
