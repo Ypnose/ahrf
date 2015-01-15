@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-# How to use it:  increment l=X <myfile> (X is the incremental value)
+# increment l=X <myfile> (X is the incremental value)
 
 BEGIN { FS=" " }
 
