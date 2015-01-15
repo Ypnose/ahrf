@@ -17,7 +17,7 @@ BEGIN { FS = "\n"; RS = "" }
 	gsub(/^[\t ]*:+[\t ]*|[\t ]*:+[\t ]*$/,"")
 	# length($0) would also work
 	if (cnt <= 6 && $0 != "") {
-		printf("<h%s>%s</h%s>\n", cnt, $0, cnt)
+		printf("<h%d>%s</h%d>\n", cnt, $0, cnt)
 	}
 	next
 }
