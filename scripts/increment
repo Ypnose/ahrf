@@ -1,0 +1,19 @@
+#!/usr/bin/awk -f
+# How to use it:  increment l=X <myfile> (X is the incremental value)
+
+BEGIN { FS=" " }
+
+{
+	s=split($0, linknum)
+	for (x=1; x<=s; x++) {
+		if (linknum[x] ~ /\[[0-9]+\]/) {
+			gsub(/\[|\]/, "", linknum[x])
+			v=linknum[x]+l
+			printf("[%d] ", v)
+		} else {
+			printf("%s ", linknum[x])
+		}
+	}
+	print ""
+	next
+}
