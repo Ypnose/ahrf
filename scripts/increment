@@ -4,16 +4,20 @@
 BEGIN { FS=" " }
 
 {
-	s=split($0, linknum)
+	s=split($0, str)
 	for (x=1; x<=s; x++) {
-		if (linknum[x] ~ /\[[0-9]+\]/) {
-			gsub(/\[|\]/, "", linknum[x])
-			v=linknum[x]+l
-			printf("[%d] ", v)
+		if (x!=s) { w=" " }
+		if (match(str[x], "\\[[0-9]+\\]")) {
+			b=substr(str[x], 1, RSTART-1)
+			# Avoid "[" and "]"
+			n=substr(str[x], RSTART+1, RLENGTH-1)
+			printf("%s[%d]%s", b, n+l, w)
 		} else {
-			printf("%s ", linknum[x])
+			printf("%s%s", str[x], w)
 		}
+		w=""
 	}
-	print ""
+	printf("\n")
 	next
 }
+
