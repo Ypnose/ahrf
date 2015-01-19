@@ -1,0 +1,8 @@
+#!/usr/bin/awk -f
+# Ypnose - http://ywstd.fr
+# Print line number including [x] (NR==X,NR==XX + increment)
+
+/\[[0-9]+\]/ {
+	printf("%-5d %s\n", NR, $0)
+	next
+}
