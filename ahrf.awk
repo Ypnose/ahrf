@@ -76,7 +76,7 @@ BEGIN { FS = "\n"; RS = "" }
 			num = substr($u,RSTART,RLENGTH)
 			url = substr($u,RSTART+RLENGTH+1)
 			if (length(url) >= 60) {
-				printf("\t<li>%s <a href=\"%s\">%.60s...</a></li>\n", num, url, url)
+				printf("\t<li>%s <a href=\"%s\">%.60s…</a></li>\n", num, url, url)
 			} else {
 				printf("\t<li>%s <a href=\"%s\">%s</a></li>\n", num, url, url)
 			}
