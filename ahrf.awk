@@ -15,9 +15,11 @@ BEGIN { FS = "\n"; RS = "" }
 	match($0,":+")
 	cnt = RLENGTH
 	gsub(/^[\t ]*:+[\t ]*|[\t ]*:+[\t ]*$/,"")
+	anc = tolower($0)
+	gsub(/ /,"-",anc)
 	# length($0) would also work
 	if (cnt <= 6 && $0 != "") {
-		printf("<h%d>%s</h%d>\n", cnt, $0, cnt)
+		printf("<h%d id=\"%s\">%s</h%d>\n", cnt, anc, $0, cnt)
 	}
 	next
 }

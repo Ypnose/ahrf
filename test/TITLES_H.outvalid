@@ -1,13 +1,13 @@
-<h1>This is the H1 title</h1>
-<h1>This is the H1 title</h1>
-<h1>This is the H1 title</h1>
-<h2>This is the H2 level</h2>
-<h2>This is the H2 level</h2>
-<h3>This is the H3 level</h3>
-<h3>This is the H3 level</h3>
-<h4>This is the H4 level</h4>
-<h4>This is the H4 level</h4>
-<h5>This is the H5 level</h5>
-<h5>This is the H5 level</h5>
-<h6>This is the H6 level</h6>
-<h6>This is the H6 level</h6>
+<h1 id="this-is-the-h1-title">This is the H1 title</h1>
+<h1 id="this-is-the-h1-title">This is the H1 title</h1>
+<h1 id="this-is-the-h1-title">This is the H1 title</h1>
+<h2 id="this-is-the-h2-level">This is the H2 level</h2>
+<h2 id="this-is-the-h2-level">This is the H2 level</h2>
+<h3 id="this-is-the-h3-level">This is the H3 level</h3>
+<h3 id="this-is-the-h3-level">This is the H3 level</h3>
+<h4 id="this-is-the-h4-level">This is the H4 level</h4>
+<h4 id="this-is-the-h4-level">This is the H4 level</h4>
+<h5 id="this-is-the-h5-level">This is the H5 level</h5>
+<h5 id="this-is-the-h5-level">This is the H5 level</h5>
+<h6 id="this-is-the-h6-level">This is the H6 level</h6>
+<h6 id="this-is-the-h6-level">This is the H6 level</h6>
