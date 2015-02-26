@@ -35,7 +35,7 @@ BEGIN { FS = "\n"; RS = "" }
 			printf("%s\n", $p)
 		}
 	}
-	printf("%s</p>\n\n", $p)
+	printf("%s</p>\n", $p)
 	next
 }
 
