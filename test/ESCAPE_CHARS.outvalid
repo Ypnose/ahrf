@@ -2,7 +2,6 @@
 Yep, but we'll need to go to this direction: &gt;, &lt;, &gt;, &gt;, &lt;&lt;, &gt;&gt;, &lt;, &gt;&gt;&gt;,
 &lt;, &gt;, &lt;&lt;&lt;.
 It that OK? Yep, I can follow the wonderful smell &amp;&amp; taste. See you there.</p>
-
 <pre><code>cd /var/tmp
 ftp http://nyftp.netbsd.org/pub/NetBSD-daily/&lt;rel&gt;/&lt;build&gt;/&lt;arch&gt;/binary/sets/base.tgz
 cd /
