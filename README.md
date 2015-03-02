@@ -207,7 +207,7 @@ before `20141027`) - `mawk 1.3.4 20141027` & `mawk-1.3.4-20141206`
 
 * [lok](https://github.com/dimkr/lok) (Linux OpenBSD port from [@dimkr](https://github.com/dimkr)) - `843382e`
 
-* [fatbase awk](http://git.2f30.org/fatbase/) (Another portable OpenBSD tools from 2f30)
+* [fatbase awk](http://git.2f30.org/fatbase/) (Another portable OpenBSD tools from [2f30](http://www.2f30.org/) folks)
 
 * NetBSD 7.0_BETA `awk` - `awk version 20121220` (thanks to [@justincormack](https://github.com/justincormack))
 
