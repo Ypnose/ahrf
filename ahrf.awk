@@ -2,8 +2,8 @@
 
 BEGIN { FS = "\n"; RS = "" }
 
-# Common shell symbols to HTML
 {
+	# Common shell symbols to HTML
 	# Two backslashes for nawk(1) and OpenBSD awk(1)
 	gsub(/\&/,"\\&amp;")
 	gsub(/</,"\\&lt;")
@@ -16,7 +16,7 @@ BEGIN { FS = "\n"; RS = "" }
 	cnt = RLENGTH
 	gsub(/^[\t ]*:+[\t ]*|[\t ]*:+[\t ]*$/,"")
 	anc = tolower($0)
-	gsub(/ /,"-",anc)
+	gsub(/ +/,"-",anc)
 	# length($0) would also work
 	if (cnt <= 6 && $0 != "") {
 		printf("<h%d id=\"%s\">%s</h%d>\n", cnt, anc, $0, cnt)
