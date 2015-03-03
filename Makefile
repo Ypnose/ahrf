@@ -3,7 +3,7 @@ AWKO = lok fatbase-awk
 BDIR = $${HOME}/dev/AWK
 RUNT = verify_regr.sh
 
-all: check-all
+all: check
 
 check: ${RUNT}
 	@$${SHELL} ${RUNT}
@@ -19,4 +19,4 @@ check-opt: ${RUNT}
 clean: test
 	@rm -rf test/*.gen
 
-.PHONY: all check check-all clean
+.PHONY: all check check-all check-opt clean
