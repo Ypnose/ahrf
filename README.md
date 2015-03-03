@@ -68,6 +68,22 @@ Race condition in ssl_parse_serverhello_tlsext (CVE-2014-3509)
 OpenSSL TLS protocol downgrade attack (CVE-2014-3511)</p>
 ```
 
+Line breaks are supported. You just need to add one or more "ghost" space(s)
+at the end of the line:
+
+```
+This could be exploited in a Denial Of Service attack.▉
+This issue affects OpenSSL 1.0.1 server implementations for both SSL/TLS
+and DTLS regardless of whether SRTP is used or configured.▉
+Reported by LibreSSL project.
+```
+```
+<p>This could be exploited in a Denial Of Service attack.<br>
+This issue affects OpenSSL 1.0.1 server implementations for both SSL/TLS
+and DTLS regardless of whether SRTP is used or configured.<br>
+Reported by LibreSSL project.</p>
+```
+
 Paragraphs can start by:
 
 * `0-9`: From `0` to `9`
@@ -205,9 +221,11 @@ before `20141027`) - `mawk 1.3.4 20141027` & `mawk-1.3.4-20141206`
 
 * OpenBSD `nawk` - `awk version 20110810`
 
-* [lok](https://github.com/dimkr/lok) (Linux OpenBSD port from [@dimkr](https://github.com/dimkr)) - `843382e`
+* [lok](https://github.com/dimkr/lok) (Linux OpenBSD port from
+[@dimkr](https://github.com/dimkr)) - `843382e`
 
-* [fatbase awk](http://git.2f30.org/fatbase/) (Another portable OpenBSD tools from [2f30](http://www.2f30.org/) folks)
+* [fatbase awk](http://git.2f30.org/fatbase/) (Another portable
+OpenBSD tools from [2f30](http://www.2f30.org/) folks)
 
 * NetBSD 7.0_BETA `awk` - `awk version 20121220` (thanks to [@justincormack](https://github.com/justincormack))
 
