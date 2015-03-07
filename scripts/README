@@ -1,4 +1,4 @@
 : Some (useful) scripts for ahrf
 
-  increment l=X <myfile> → (increment all links numbers)
-  showline <myfile> → (print line number including the [x] pattern)
+  * increment l=X <myfile> → (increment all links numbers)
+  * showline <myfile> → (print line number including the [x] pattern)
