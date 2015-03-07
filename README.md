@@ -11,7 +11,7 @@ The main goal was... readability.
 "[Compatibility](https://github.com/Ypnose/ahrf#compatibility)")
 * Simple syntax
 * Easy to use / remember
-* Compatible with [wswsh](https://github.com/Ypnose/Wswsh)
+* Designed to work with [wswsh](https://github.com/Ypnose/Wswsh)
 * File format can be parsed by almost everything: `sed`, `sh`, `python` or `C`
 
 Syntax
