@@ -1,6 +1,9 @@
+# Makefile for ahrf - see LICENSE for copyright and license
+# Ypnose - http://ywstd.fr
+
 AWKV = nawk mawk gawk
 AWKO = lok fatbase-awk
-BDIR = $${HOME}/dev/AWK
+BDIR = $${HOME}/Dev/AWK
 RUNT = verify_regr.sh
 
 all: check
