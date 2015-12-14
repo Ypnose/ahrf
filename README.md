@@ -10,7 +10,7 @@ The main goal was... readability.
 * Supporting many `awk` variants (`nawk`, `mawk`, `gawk` or OpenBSD `awk`) (cf
 "[Compatibility](https://github.com/Ypnose/ahrf#compatibility)")
 * Simple syntax
-* Easy to use / remember
+* Easy to use / remember / extend
 * Designed to work with [wswsh](https://github.com/Ypnose/Wswsh)
 * File format can be parsed by almost everything: `sed`, `sh`, `python` or `C`
 
