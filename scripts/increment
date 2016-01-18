@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-# Ypnose - http://ywstd.fr
+# Script by Ypnose - http://ywstd.fr
 # increment l=X <myfile> (X is the incremental value)
 
 BEGIN { FS=" " }
