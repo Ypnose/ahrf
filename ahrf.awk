@@ -1,4 +1,5 @@
 #!/usr/bin/awk -f
+# Script by Ypnose - http://ywstd.fr
 
 BEGIN { FS = "\n"; RS = "" }
 
