@@ -24,10 +24,8 @@ for f in $TESTREG; do
 		printf "%s\n" "$f / ${f}.${OUTE} is missing!" >&2
 		exit 1
 	fi
-	"${1:-awk}" -f ../ahrf.awk "$f" >"${f}.${GENE}"
-	[ $? -ne 0 ] && exit 1
-	diff -u "${f}.${OUTE}" "${f}.${GENE}"
-	if [ $? -eq 0 ]; then
+	"${1:-awk}" -f ../ahrf.awk "$f" >"${f}.${GENE}" || exit 1
+	if diff -u "${f}.${OUTE}" "${f}.${GENE}"; then
 		printf "%-20s%s\n" "* $f" "...  OK" && rm "${f}.${GENE}"
 	fi
 done
