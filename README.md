@@ -2,7 +2,7 @@ ahrf - [a]scii (or [a]wk) [h]uman [r]eadable [f]ile
 ---------------------------------------------------
 
 ahrf is an `awk` script designed to interpret a simple and straightforward
-ascii file format. I wrote it to share my personal documentation, which is
+ASCII file format. I wrote it to share my personal documentation, which is
 written in plain text files. They can be exported to HTML.  
 The main goal was... readability.
 
