@@ -21,9 +21,8 @@ BEGIN { FS = "\n"; RS = "" }
 	anc = tolower($0)
 	gsub(/ +/,"-",anc)
 	# length($0) would also work
-	if (cnt <= 6 && $0 != "") {
+	if (cnt <= 6 && $0 != "")
 		printf("<h%d id=\"%s\">%s</h%d>\n", cnt, anc, $0, cnt)
-	}
 	next
 }
 
@@ -89,11 +88,10 @@ BEGIN { FS = "\n"; RS = "" }
 			num = substr($u,RSTART,RLENGTH)
 			url = substr($u,RSTART+RLENGTH+1)
 			# Do not print the entire link if chars > 61
-			if (length(url) >= 60) {
+			if (length(url) >= 60)
 				printf("\t<li>%s <a href=\"%s\">%.60s…</a></li>\n", num, url, url)
-			} else {
+			else
 				printf("\t<li>%s <a href=\"%s\">%s</a></li>\n", num, url, url)
-			}
 		}
 	}
 	printf("</ul>\n")
