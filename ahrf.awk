@@ -13,9 +13,11 @@ BEGIN { FS = "\n"; RS = "" }
 
 # h1, h2, h3, h4, h5, h6
 /^[\t ]*:/ {
+	# Count ':' and match the valid "level"
 	match($0,":+")
 	cnt = RLENGTH
 	gsub(/^[\t ]*:+[\t ]*|[\t ]*:+[\t ]*$/,"")
+	# Create the anchor
 	anc = tolower($0)
 	gsub(/ +/,"-",anc)
 	# length($0) would also work
@@ -66,6 +68,7 @@ BEGIN { FS = "\n"; RS = "" }
 	for (l=1; l<=NF; l++) {
 		gsub(/^[\t ]*/,"",$l)
 		if ($l ~ /\* +/) {
+			# Only match the text
 			match($l,"\\* +")
 			str = substr($l,RSTART+RLENGTH)
 			printf("\t<li>%s</li>\n", str)
@@ -81,9 +84,11 @@ BEGIN { FS = "\n"; RS = "" }
 	for (u=1; u<=NF; u++) {
 		gsub(/^[\t ]*/,"",$u)
 		if (match($u,"\\[[0-9]+\\]")) {
-			# RSTART can be replaced by 1, because we removed useless tabs/spaces
+			# RSTART can be replaced by 1, because we already removed
+			# useless tabs and/or spaces
 			num = substr($u,RSTART,RLENGTH)
 			url = substr($u,RSTART+RLENGTH+1)
+			# Do not print the entire link if chars > 61
 			if (length(url) >= 60) {
 				printf("\t<li>%s <a href=\"%s\">%.60s…</a></li>\n", num, url, url)
 			} else {
