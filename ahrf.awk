@@ -28,15 +28,21 @@ BEGIN { FS = "\n"; RS = "" }
 # Paragraph
 /^[A-Za-z0-9_("]+/ {
 	printf("<p>")
-	for (p=1; p<NF; p++) {
-		if ($p ~ / +$/) {
-			gsub(/ +$/,"",$p)
-			printf("%s<br>\n", $p)
-		} else {
-			printf("%s\n", $p)
+	for (p=1; p<=NF; p++) {
+		# Line break
+		gsub(/ +$/,"<br>\n",$p)
+		x = split($p,word," ")
+		for (w=1; w<=x; w++) {
+			printf("%s", word[w])
+			# If EOL is not reached, add a space
+			if (w != x)
+				printf(" ")
 		}
+		# If it's the last paragraph line, close the paragraph
+		if (p == NF)
+			printf("</p>")
+		printf("\n")
 	}
-	printf("%s</p>\n", $p)
 	next
 }
 
