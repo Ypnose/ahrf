@@ -241,8 +241,7 @@ I used `nawk` when I wrote this script. It can be found
 [here](http://www.cs.princeton.edu/~bwk/btl.mirror/).
 
 `make all` (or simply `make`) will launch the tests for every variants
-specified in `AWKV`. On your system, the executables are probably
-located in a different directory. So, try to change `BDIR` accordingly.
+specified in `AWKV`.
 
 This script wasn't created to mimic or replace `markdown` syntax. Therefore,
 I do not ask or force anybody to adopt it. I want to write my own documentation
