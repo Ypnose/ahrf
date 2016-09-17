@@ -1,0 +1,52 @@
+# TABLES: <table><tr><td></td></tr></table>
+
+# Two columns
+
+%%%%
+cmd1 %%% Cook
+cmd2 %%% Eat
+cmd3 %%% Fart
+cmd4 %%% Sleep
+%%%%
+
+# Three colums
+
+%%%%%%
+06:00 AM %%% Wake up               %%% Or not
+07:00 AM %%% Take a shit           %%% Depends
+09:00 AM %%% Check emails          %%% No emails received
+10:00 AM %%% Answer to spams       %%% Check previous
+01:15 PM %%% Receive bank transfer %%% No bank account
+04:43 PM %%% Verify bank account   %%% No bank account
+09:00 PM %%% Start the party       %%% No friends
+02:00 AM %%% Go sleep              %%% No bed, sleep on the ground
+%%%%%%
+
+# Unregular lines
+
+%%%%%%%%%
+  CVE-1999-0004 %%% MIME buffer overflow in email clients, e.g. Solaris mailtool and Outlook
+	  		CVE-2016-6925			%%% 		   Use-after-free vulnerability in Adobe Flash Player			
+		       CVE-2016-6193     %%%           Buffer overflow in the Wi-Fi driver in Huawei P8 smartphones        
+  	   	   CVE-2016-5457 			%%%				Unspecified vulnerability in the ILOM component in Oracle Sun Systems    
+%%%%%%%%%
+
+# Unregular columns
+
+%%%%%
+Line1 %%% Column2 %%% Column3 %%% Column4
+Line2 %%% Column2
+Line3 %%% Column2 %%% Column3 %%% Column4 %%% Column5 %%% Column6
+Line4 %%% Column2 %%% Column3
+%%%%%%%%%%%%%%%
+
+# Dirty table
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  mainline: 	%%% 4.8-rc6 %%%		2016-09-12		
+           stable: %%%	4.7.4 %%%       	2016-09-15    
+longterm: 						%%% 4.4.21 	                                     %%% 2016-09-15
+longterm: 	%%% 4.1.32 	%%% 2016-09-04
+longterm: 	%%% 3.18.41 %%%                             	2016-09-04			
+longterm: 	                                     %%% 3.16.37 %%% 2016-08-22 	
+%%%%%%%%%%

@@ -61,6 +61,24 @@ BEGIN { FS = "\n"; RS = "" }
 	next
 }
 
+# Tables
+/^%%%%+/ {
+	if (NF > 2 && $NF ~ /%%%%+/) {
+		gsub(/^%%%%+[\t ]*\n|\n[\t ]*%%%%+$/,"")
+		printf("<table>\n")
+		for (t=1; t<=NF; t++) {
+			printf("\t<tr>\n")
+			y = split($t,column,"%%%")
+			for (c=1; c<=y; c++) {
+				gsub(/^[\t ]+|[\t ]+$/,"",column[c])
+				printf("\t<td>%s</td>\n", column[c])
+			}
+			printf("\t</tr>\n")
+		}
+		printf("</table>\n")
+	}
+}
+
 # List
 /^[\t ]*\* +/ {
 	printf("<ul>\n")

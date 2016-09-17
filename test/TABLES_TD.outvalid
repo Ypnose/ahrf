@@ -1,0 +1,135 @@
+<table>
+	<tr>
+	<td>cmd1</td>
+	<td>Cook</td>
+	</tr>
+	<tr>
+	<td>cmd2</td>
+	<td>Eat</td>
+	</tr>
+	<tr>
+	<td>cmd3</td>
+	<td>Fart</td>
+	</tr>
+	<tr>
+	<td>cmd4</td>
+	<td>Sleep</td>
+	</tr>
+</table>
+<table>
+	<tr>
+	<td>06:00 AM</td>
+	<td>Wake up</td>
+	<td>Or not</td>
+	</tr>
+	<tr>
+	<td>07:00 AM</td>
+	<td>Take a shit</td>
+	<td>Depends</td>
+	</tr>
+	<tr>
+	<td>09:00 AM</td>
+	<td>Check emails</td>
+	<td>No emails received</td>
+	</tr>
+	<tr>
+	<td>10:00 AM</td>
+	<td>Answer to spams</td>
+	<td>Check previous</td>
+	</tr>
+	<tr>
+	<td>01:15 PM</td>
+	<td>Receive bank transfer</td>
+	<td>No bank account</td>
+	</tr>
+	<tr>
+	<td>04:43 PM</td>
+	<td>Verify bank account</td>
+	<td>No bank account</td>
+	</tr>
+	<tr>
+	<td>09:00 PM</td>
+	<td>Start the party</td>
+	<td>No friends</td>
+	</tr>
+	<tr>
+	<td>02:00 AM</td>
+	<td>Go sleep</td>
+	<td>No bed, sleep on the ground</td>
+	</tr>
+</table>
+<table>
+	<tr>
+	<td>CVE-1999-0004</td>
+	<td>MIME buffer overflow in email clients, e.g. Solaris mailtool and Outlook</td>
+	</tr>
+	<tr>
+	<td>CVE-2016-6925</td>
+	<td>Use-after-free vulnerability in Adobe Flash Player</td>
+	</tr>
+	<tr>
+	<td>CVE-2016-6193</td>
+	<td>Buffer overflow in the Wi-Fi driver in Huawei P8 smartphones</td>
+	</tr>
+	<tr>
+	<td>CVE-2016-5457</td>
+	<td>Unspecified vulnerability in the ILOM component in Oracle Sun Systems</td>
+	</tr>
+</table>
+<table>
+	<tr>
+	<td>Line1</td>
+	<td>Column2</td>
+	<td>Column3</td>
+	<td>Column4</td>
+	</tr>
+	<tr>
+	<td>Line2</td>
+	<td>Column2</td>
+	</tr>
+	<tr>
+	<td>Line3</td>
+	<td>Column2</td>
+	<td>Column3</td>
+	<td>Column4</td>
+	<td>Column5</td>
+	<td>Column6</td>
+	</tr>
+	<tr>
+	<td>Line4</td>
+	<td>Column2</td>
+	<td>Column3</td>
+	</tr>
+</table>
+<table>
+	<tr>
+	<td>mainline:</td>
+	<td>4.8-rc6</td>
+	<td>2016-09-12</td>
+	</tr>
+	<tr>
+	<td>stable:</td>
+	<td>4.7.4</td>
+	<td>2016-09-15</td>
+	</tr>
+	<tr>
+	<td>longterm:</td>
+	<td>4.4.21</td>
+	<td>2016-09-15</td>
+	</tr>
+	<tr>
+	<td>longterm:</td>
+	<td>4.1.32</td>
+	<td>2016-09-04</td>
+	</tr>
+	<tr>
+	<td>longterm:</td>
+	<td>3.18.41</td>
+	<td>2016-09-04</td>
+	</tr>
+	<tr>
+	<td>longterm:</td>
+	<td>3.16.37</td>
+	<td>2016-08-22</td>
+	</tr>
+</table>
