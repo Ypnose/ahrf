@@ -5,17 +5,18 @@
 BEGIN { FS=" " }
 
 {
-	s=split($0, str)
+	s = split($0, str)
 	for (x=1; x<=s; x++) {
-		if (x!=s) { w=" " }
+		if (x != s)
+			w=" "
 		if (match(str[x], "\\[[0-9]+\\]")) {
-			b=substr(str[x], 1, RSTART-1)
+			b = substr(str[x], 1, RSTART-1)
 			# Avoid "[" and "]"
-			n=substr(str[x], RSTART+1, RLENGTH-1)
+			n = substr(str[x], RSTART+1, RLENGTH-1)
 			printf("%s[%d]%s", b, n+l, w)
-		} else {
-			printf("%s%s", str[x], w)
 		}
+		else
+			printf("%s%s", str[x], w)
 		w=""
 	}
 	printf("\n")
