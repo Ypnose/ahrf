@@ -37,3 +37,6 @@ When asked why he wanted to start over instead of helping to make
 OpenSSL better, de Raadt said the existing code is too much of a mess.<br>
 "Our group removed half of the OpenSSL source tree in a week.<br>
 It was discarded leftovers," de Raadt told Ars in an e-mail.</p>
+<p>There are so many shells, it becomes hard to choose what you want when
+you are a novice.<br>
+<code>bash</code> (very common), <code>dash</code>, <code>sh</code>, <code>pdksh</code> or even <code>tcsh</code>.</p>
