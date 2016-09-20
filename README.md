@@ -254,11 +254,6 @@ I'm not even talking about the dozens of differents variants /
 implementations... And do not tell me I don't know what I'm talking about
 because I "played" thousands of times with `markdown`.
 
-TODO
-----
-
-- [ ] Blockquote?
-
 Issues
 ------
 
