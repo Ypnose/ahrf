@@ -89,7 +89,7 @@ Paragraphs can start by:
 * `0-9`: From `0` to `9`
 * `A-Z`: All letters uppercase
 * `a-z`: All letters lowercase
-* `_`, `(`, `"`
+* `_`, `(`, `"`, <code>`</code>
 
 #### Code block: `<pre><code></code></pre>`
 
