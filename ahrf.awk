@@ -110,9 +110,9 @@ BEGIN { FS = "\n"; RS = "" }
 			# useless tabs and/or spaces
 			num = substr($u,RSTART,RLENGTH)
 			url = substr($u,RSTART+RLENGTH+1)
-			# Do not print the entire link if chars > 61
-			if (length(url) >= 60)
-				printf("\t<li>%s <a href=\"%s\">%.60s…</a></li>\n", num, url, url)
+			# Do not print the entire link if chars > 100
+			if (length(url) > 100)
+				printf("\t<li>%s <a href=\"%s\">%.100s…</a></li>\n", num, url, url)
 			else
 				printf("\t<li>%s <a href=\"%s\">%s</a></li>\n", num, url, url)
 		}
