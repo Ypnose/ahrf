@@ -38,10 +38,10 @@ Syntax
 and so on...
 
 ```
-::: ::: for <h3><h3>
-:::: :::: for <h4><h4>
-::::: ::::: for <h5><h5>
-:::::: :::::: for <h6><h6>
+::: ::: for <h3></h3>
+:::: :::: for <h4></h4>
+::::: ::::: for <h5></h5>
+:::::: :::::: for <h6></h6>
 ```
 
 It's possible to define a heading, without the second `:::` field (but it
