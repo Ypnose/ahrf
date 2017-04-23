@@ -91,6 +91,22 @@ Paragraphs can start by:
 * `a-z`: All letters lowercase
 * `_`, `(`, `"`, <code>`</code>
 
+#### Inline Code: `<code></code>`
+
+Code inside a paragraph is surrounded by 2 <code>`</code>.
+
+```
+There are so many shells, it becomes hard to choose what you want when
+you are a novice.  
+``bash`` (very common), ``dash``, ``sh``, ``pdksh`` or even ``tcsh``.
+```
+
+```
+<p>There are so many shells, it becomes hard to choose what you want when
+you are a novice.<br>
+<code>bash</code> (very common), <code>dash</code>, <code>sh</code>, <code>pdksh</code> or even <code>tcsh</code>.</p>
+ ```
+
 #### Code block: `<pre><code></code></pre>`
 
 Code blocks must start by 4 `=` at least.
