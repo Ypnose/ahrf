@@ -6,7 +6,7 @@ BEGIN { FS = "\n"; RS = "" }
 {
 	# Common shell symbols to HTML
 	# Two backslashes for nawk(1) and OpenBSD awk(1)
-	gsub(/\&/,"\\&amp;")
+	gsub(/&/,"\\&amp;")
 	gsub(/</,"\\&lt;")
 	gsub(/>/,"\\&gt;")
 }
