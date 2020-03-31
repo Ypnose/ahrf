@@ -34,7 +34,7 @@ BEGIN { FS = "\n"; RS = "" }
 		gsub(/ +$/,"<br>\n",$p)
 		x = split($p,word," ")
 		for (w=1; w<=x; w++) {
-			if (word[w] ~ /``/) {
+			if (word[w] ~ /^``/) {
 				split(word[w],code,"``")
 				printf("%s<code>%s</code>%s", code[1], code[2], code[3])
 			}
